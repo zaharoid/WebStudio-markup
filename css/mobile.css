@@ -1,0 +1,40 @@
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 428px;
+    }
+
+    /* <-------Hero---------> */
+
+    .hero-title {
+        width: 320px;
+    }
+
+    /* <-------Hero---------> */
+
+
+    /* <-------Menu---------> */
+
+    
+
+    /* <-------Menu---------> */
+}
+@media screen and (max-width: 767px) {
+    .options .title {
+            text-align: center;
+        }
+ .footer-link {
+    text-align: center;
+ }
+ .footer-text {
+    margin-left: auto;
+    margin-right: auto;
+ }
+   
+}
+
+@media screen and (min-width: 428px) and (max-width: 766px) {
+    .customers-link {
+            padding: 16px 40px;
+        }
+   
+}

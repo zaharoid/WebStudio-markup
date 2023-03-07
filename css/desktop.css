@@ -1,0 +1,129 @@
+@media screen and (max-width: 1199px) {
+    
+    .features {
+        display: none;
+    }
+    .icon-cont {
+        display: none;
+    }
+        }
+    @media screen and (min-width: 1200px) {
+
+    /* <-------Options---------> */
+    .options {
+        flex-wrap: nowrap;
+    }    
+
+    .options .item {
+        width: calc((100% - 24px) / 2)
+    }
+        
+    .options .item {
+        margin-right: 24px;
+    }
+        
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .section.options {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    /* <-------Options---------> */
+
+    /* <-------Team---------> */
+
+    .section.team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .team>.container {
+        max-width: 1158px;
+    }
+    .team.list .item {
+        width: calc((100% - 72px)/ 4);
+    }
+
+    /* <-------Team---------> */
+    
+    /* <-------Customers---------> */
+
+    .section.customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .customers>.container {
+        max-width: 1158px;
+    }
+    .customers.list {
+        row-gap: 0;
+    }
+    .customers-item {
+         width: calc((100% - 120px) / 6);
+    }
+
+    /* <-------Customers---------> */
+
+/* <-------Features---------> */
+
+.features {
+display: block;   
+}
+.skills {
+    display: flex;
+    gap: 24px; 
+}    
+       
+            
+/* <-------Features---------> */
+
+
+/* <-------Hero---------> */
+.hero {
+    background-image: linear-gradient(to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    max-width: 1440px;
+    height: 600px;
+        }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+            background-image: linear-gradient(to right,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-2x.jpg);
+    }
+}
+ .hero-title {
+     padding: 187px 0 48px;
+ }
+ .hero-cont {
+     padding-bottom: 188px;
+ }
+
+ /* <-------Hero---------> */
+
+ /* <-------Navigation---------> */
+
+ .contacts .item:not(:last-child) {
+     margin-right: 40px;
+ }
+
+ /* <-------Navigation---------> */
+
+
+ /* <-------Footer---------> */
+ .footer-item {
+     margin-right: 120px;
+ }
+
+ /* <-------Footer---------> */
+    }
