@@ -14,6 +14,9 @@
     .options .item:nth-child(2n + 1) {
         margin-right: 24px;
     }
+    .options .item:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+    }
 
     /* <-------Options---------> */
 
@@ -24,6 +27,8 @@
     }
     .team > .container {
         max-width: 582px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .team.list .item {
         width: calc((100% - 24px)/ 2);
@@ -39,6 +44,8 @@
 
     .customers > .container {
         max-width: 582px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .customers-link {
         padding: 16px 32px;
@@ -183,5 +190,13 @@
             gap: 24px;
         }
     }
+    /* <-------Footer---------> */
+
+    /* <-------Footer---------> */
+        
+    .form {
+        width: 408px;
+    }
+
     /* <-------Footer---------> */
     }

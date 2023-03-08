@@ -13,15 +13,16 @@
     .options {
         flex-wrap: nowrap;
     }    
-
-    .options .item {
-        width: calc((100% - 24px) / 2)
-    }
-        
     .options .item {
         margin-right: 24px;
     }
-        
+    .options .title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+
+        text-transform: none;
+    }
     .container {
         max-width: 1158px;
         padding-left: 15px;

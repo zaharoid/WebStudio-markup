@@ -154,7 +154,6 @@ textarea {
     width: 264px;
     height: 40px;
     padding-left: 16px;
-    margin-right: 24px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -512,6 +511,7 @@ textarea {
         
     text-align: center;
     height: 432px;
+    width: 100%;
     max-width: 428px;
 
     margin-left: auto;
@@ -623,25 +623,24 @@ textarea {
     display: flex;
     flex-wrap: wrap;
 }
-
 .options .item:not(:last-child) {
     margin-bottom: 72px;
 }
-
 .options .icon {
-
     width: 64px;
     height: 64px;
-
-
 }
-
 .options .title {
     color: var(--title-text-color);
     margin-bottom: 8px;
-    
-}
 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
 .options .options-text {
     width: 100%;
     font-size: 16px;
@@ -649,22 +648,14 @@ textarea {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-
-
 .section.options {
     padding-top: 96px;
     padding-bottom: 96px;
-
 }
-
 .options .hidden-title {
     visibility: hidden;
 }
-
             /* options */
-
-
 
 /* features */
 
@@ -798,9 +789,8 @@ textarea {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 
@@ -939,7 +929,7 @@ opacity: 1;
 }
 .customers-item {
     width: calc((100% - 16px) / 2);
-    
+    height: 88px;
 }
 
 .customers-link {
@@ -953,7 +943,6 @@ opacity: 1;
 
 .customers-link:hover {
     border: 1px solid #404BBF;
-    
 
 }
 
@@ -1040,7 +1029,7 @@ opacity: 1;
 }
 
 .form {
-    width: 408px;
+    width: 392px;
     margin-right: auto;
     margin-left: auto;
     padding: 72px 24px 24px 24px;
