@@ -121,9 +121,28 @@ display: block;
 
 
  /* <-------Footer---------> */
- .footer-item {
+ .footer-item.main {
      margin-right: 120px;
+ }
+ .footer-item {
+    margin-right: 80px;
+ }
+ .footer-cont {
+     flex-wrap: nowrap;
+ }
+ .footer-form {
+    display: flex;
+    gap: 24px;
  }
 
  /* <-------Footer---------> */
+
+ /* <-------Contacts---------> */
+
+    .contacts > .list {
+        display: flex;
+    }
+
+ /* <-------Contacts---------> */
+
     }

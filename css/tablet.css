@@ -132,7 +132,7 @@
     /* <-------Contacts---------> */
 
    .contacts {
-    display: flex;
+    display: block;
     margin-left: auto;
    }
    .contacts .link {
@@ -149,7 +149,6 @@
        transition: color 250ms var(--timing-function);
    }
    .contacts>.list {
-       display: flex;
        margin-right: auto;
    }
 
@@ -157,19 +156,10 @@
 
     /* <-------Menu---------> */
 
-    /* .js-menu-container.is-open {
-        display: none;
-    }
-    .menu-toggle.js-open-menu {
+    .menu-toggle {
         display: none;
     }
     
-    .js-menu-container {
-        display: flex;
-        align-items: center;
-        height: 70px;  
-    } */
-
     /* <-------Menu---------> */
 
 
@@ -177,7 +167,21 @@
     
     .footer-cont {
         display: flex;
+        flex-wrap: wrap;
     }
-
+    
+    @media screen and (max-width: 1199px) {
+        .footer-logo>.container {
+            padding: 96px 164px 96px 108px;
+        }
+        .footer-item.main {
+            margin-right: 24px;
+            margin-bottom: 72px;
+        }
+        .footer-form {
+            display: flex;
+            gap: 24px;
+        }
+    }
     /* <-------Footer---------> */
     }

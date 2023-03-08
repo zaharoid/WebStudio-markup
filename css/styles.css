@@ -87,8 +87,8 @@ textarea {
 }
 
 .footer-logo .container {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 
@@ -137,6 +137,7 @@ textarea {
 
 .footer.list {
     display: flex;
+    justify-content: center;
     gap: 16px;
     margin-top: 16px;
 }
@@ -144,7 +145,6 @@ textarea {
 /* footer-form */
 
 .footer-form {
-    display: flex;
     margin-top: 16px;
 }
 
@@ -185,6 +185,8 @@ textarea {
     width: 165px;
     height: 40px;
     padding: 8px 24px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-form-icon {
@@ -276,8 +278,6 @@ textarea {
         display: none;
     }
         
-    
-
 /* Contacts */
 
 /* nav */
@@ -292,6 +292,8 @@ textarea {
 /* menu */
 
 .mobile-menu {
+    transform: translateY(-100%);
+    opacity: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -299,12 +301,28 @@ textarea {
     background-color: #fff;
     padding-top: 24px;
     padding-bottom: 40px;
+
+    transition: transform 250ms var(--timing-function),
+                opacity 250ms var(--timing-function);
+}
+.mobile-menu.is-open {
+    transform: translateY(0);
+    opacity: 1;
+
 }
 .menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: auto;
+
     width: 100%;
+    height: 100%;
+    max-width: 428px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
+
 }
 .menu-toggle {
     height: 22px;
@@ -313,12 +331,15 @@ textarea {
     margin: 0;
     border: none;
     margin-left: auto;
-    
 }
 .menu-toggle.js-close-menu {
-    display: block;
-    /* margin-left: auto; */
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 32px;
+
+    cursor: pointer;
     width: 24px;
     height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -326,7 +347,11 @@ textarea {
     border-radius: 50%;
     
     transition: background-color 250ms var(--timing-function);
-    
+    }
+    .js-close-menu:hover,
+    .js-close-menu:focus{
+        background-color: #404BBf;
+        fill: #fff;
     }
 .menu-close-icon {
     width: 8px;
@@ -334,11 +359,101 @@ textarea {
     
     transition: fill 250ms var(--timing-function);
 }
-
 .menu-icon {
     width: 32px;
     height: 22px;
     stroke: var(--title-text-color);
+}
+.menu-nav {
+    max-width: 428px;
+    margin-bottom: 25px;
+}
+.menu-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
+    letter-spacing: 0.02em;
+
+    text-transform: capitalize;
+    text-decoration: none;
+
+    color: var(--title-text-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+    color: #404BBF;
+}
+.menu-item:not(:last-child) {
+    margin-bottom: 40px;
+}
+.menu-contacts {
+    max-width: 428px;
+    margin-bottom: 48px;
+}
+.menu-contacts-link {
+    text-decoration: none;
+}
+ .current {
+     color: #404BBF;
+ }
+ .menu-contacts-link.tel {
+    display: block;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    margin-bottom: 40px;
+    
+
+    color: #434455;
+
+    transition: color 250ms var(--timing-function);
+ }
+ .menu-contacts-link.mail {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    letter-spacing: 0.02em;
+        
+    color: #434455;
+
+    transition: color 250ms var(--timing-function);
+ }
+ .menu-contacts-link:hover,
+ .menu-contacts-link:focus {
+    color: var(--button-logo-color);
+ }
+ .menu.list {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+
+    margin: 0 auto 40px;
+
+ }
+.socmedia-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--button-logo-color);
+
+    transition: background-color 250ms var(--timing-function);
+}
+.socmedia-menu-icon:hover,
+.socmedia-menu-icon:focus {
+    background-color: #404BBF;
+}
+.socmedia-menu-icon .icon {
+    width: 24px;
+    height: 24px;
 }
 
 /* menu */

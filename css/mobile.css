@@ -19,17 +19,28 @@
     /* <-------Menu---------> */
 }
 @media screen and (max-width: 767px) {
-    .options .title {
-            text-align: center;
-        }
+.options .title {
+    text-align: center;
+    }
+
+
  .footer-link {
+    display: block;
     text-align: center;
  }
  .footer-text {
     margin-left: auto;
     margin-right: auto;
  }
-   
+.footer-item {
+    margin-bottom: 72px;
+}
+.footer-title {
+    text-align: center;
+}
+.footer-input {
+    width: 100%;
+    margin-bottom: 16px;
 }
 
 @media screen and (min-width: 428px) and (max-width: 766px) {
@@ -37,4 +48,5 @@
             padding: 16px 40px;
         }
    
+}
 }
