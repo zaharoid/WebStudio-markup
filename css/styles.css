@@ -57,6 +57,9 @@ textarea {
     line-height: 1.3;
     text-decoration: none;
     text-transform: uppercase;
+
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 
@@ -223,28 +226,19 @@ textarea {
 .socmedia-icon > .icon {
     width: 24px;
     height: 24px;
-    
 }
-
 .socmedia-icon:hover {
     background-color: #31D0AA;
-
 }
 
-
 /* socmedia */
-
-
 
 /* nav */
 
 .main-nav {
     display: flex;
-    align-items: center;
     height: 70px;
 }
-
-
 
 /* list */
 
@@ -253,8 +247,6 @@ textarea {
     padding: 0;
     margin: 0;
 }
-
-
 
 /* list */
 
@@ -364,7 +356,7 @@ textarea {
     stroke: var(--title-text-color);
 }
 .menu-nav {
-    max-width: 428px;
+    width: 151px;
     margin-bottom: 25px;
 }
 .menu-link {
@@ -428,8 +420,7 @@ textarea {
  }
  .menu.list {
     display: flex;
-    justify-content: center;
-    gap: 56px;
+    justify-content: space-around;
 
     margin: 0 auto 40px;
 
@@ -508,11 +499,12 @@ textarea {
         url(../images/Dark-bg-phone.jpg);
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
         
     text-align: center;
     height: 432px;
     width: 100%;
-    max-width: 428px;
+    
 
     margin-left: auto;
     margin-right: auto;
@@ -596,14 +588,14 @@ textarea {
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    width: 408px;
+    max-width: 392px;
     height: 576px;
     background-color: #fff;
     border-radius: 4px;
 
-    transition: transform 500ms var(--timing-function);
+    -webkit-overflow-scrolling: touch;
 
-    
+    transition: transform 500ms var(--timing-function); 
 }
                     /* modal */
 
@@ -623,9 +615,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
 }
-.options .item:not(:last-child) {
-    margin-bottom: 72px;
-}
+
 .options .icon {
     width: 64px;
     height: 64px;
@@ -1032,11 +1022,12 @@ opacity: 1;
     width: 392px;
     margin-right: auto;
     margin-left: auto;
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
 
 }
 
 .form-field {
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -1123,15 +1114,14 @@ opacity: 1;
 
 .form-icon {
     position: absolute;
-    top: 50%;
+    bottom: 14px;
     left: 19px;
 
 
     width: 12px;
     height: 12px;
 
-    transform: translateY(-50%);
-    
+    /* transform: translateY(50%);     */
     transition: fill 250ms var(--timing-function);
     
 }
@@ -1139,6 +1129,8 @@ opacity: 1;
 
 .form-cont {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
