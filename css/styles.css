@@ -319,7 +319,7 @@ textarea {
     height: 22px;
     background-color: transparent;
     padding: 0;
-    margin: 0;
+    margin: 24px 0;
     border: none;
     margin-left: auto;
 }
@@ -351,6 +351,7 @@ textarea {
     transition: fill 250ms var(--timing-function);
 }
 .menu-icon {
+    display: block;
     width: 32px;
     height: 22px;
     stroke: var(--title-text-color);
@@ -476,7 +477,9 @@ textarea {
 
     margin-left: auto;
     margin-right: auto;
-    padding: 112px 0 72px;
+    padding-top: 112px;
+    margin-bottom: 72px;
+
     color: #ffffff;
 
 }
@@ -593,8 +596,6 @@ textarea {
     background-color: #fff;
     border-radius: 4px;
 
-    -webkit-overflow-scrolling: touch;
-
     transition: transform 500ms var(--timing-function); 
 }
                     /* modal */
@@ -656,9 +657,9 @@ textarea {
 /* features */
 
 /* team */
-.team > .container {
+/* .team > .container {
     max-width: 294px;
-}
+} */
 
 .team-title {
     font-weight: 500;
@@ -988,9 +989,6 @@ opacity: 1;
 }
 
 .social-icon > .icon {
-    
-
-
     width: 16px;
     height: 16px;
     fill: #fff;
@@ -1002,10 +1000,7 @@ opacity: 1;
 
                         /* social */
 
-
                         /* Form */
-
-
 
 .form-title {
     font-weight: 500;
@@ -1023,7 +1018,6 @@ opacity: 1;
     margin-right: auto;
     margin-left: auto;
     padding: 72px 16px 24px 16px;
-
 }
 
 .form-field {
@@ -1135,17 +1129,26 @@ opacity: 1;
 }
 
 .checkbox-label {
-    display: flex;
-    align-items: center;
     font-weight: 400;
-        font-size: 12px;
-        line-height: calc(16/12);
-        letter-spacing: 0.04em;
-        color: #757575;
-
-
+    font-size: 12px;
+    line-height: calc(16/12);
+    letter-spacing: 0.04em;
+    color: #757575;
 }
-
+.check-label .policy {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    
+    color: var(--button-logo-color);
+}
+.check-label .policy:hover,
+.check-label .policy:focus {
+    color: #404BBF;
+}
 .checkbox {
     appearance: none;
     -moz-appearance: none;
@@ -1168,27 +1171,17 @@ opacity: 1;
 
     margin-right: 5px;
     padding: 4px 3px;
-
-    
-
 } 
-
 .checkbox:checked + .checkbox-icon {
-    
-    
-    
     background-image: url(../images/check.svg);
     background-size: contain;
     background-origin: border-box;
-    
 }
 
 .check-icon {
     fill: var(--secondary-bg-color);
     width: 10px;
     height: 8px;
-
-    
 }
 
 .form-button {
@@ -1198,17 +1191,39 @@ opacity: 1;
 
     width: 169px;
     height: 56px;
-    
-    
-
 
     margin-left: auto;
     margin-right: auto;
     margin-top: 24px;
-
 }
 
-
+@media screen and (max-width: 428px) {
+.form {
+    width: 300px;
+    height: 550px;
+    padding: 50px 10px 5px;
+}
+.form-input {
+    width: 260px;
+}
+.form-comment {
+    width: 260px;
+}
+.checkbox-label {
+    align-items: start;
+}
+.form-button {
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+}
+.form-field {
+    width: 260px;
+}
+.form-cont {
+    width: 260px;
+}
+}
 
 
 

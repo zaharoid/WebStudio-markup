@@ -29,8 +29,10 @@
 .options .title {
     text-align: center;
     
-    
     color: #2E2F42;
+    }
+    .team.list {
+        justify-content: center;
     }
 
 

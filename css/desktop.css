@@ -108,7 +108,8 @@ display: block;
     }
 }
  .hero-title {
-     padding: 187px 0 48px;
+     padding-top: 187px;
+     margin-bottom: 48px;
  }
  .hero-cont {
      padding-bottom: 188px;
