@@ -17,9 +17,6 @@ body {
 
     font-family: Roboto, sans-serif;
     letter-spacing: 0.02em;
-
-
-
 }
 
 h1,
@@ -582,9 +579,7 @@ textarea {
     height: 8px;
 
     transition: fill 250ms var(--timing-function);
-
 }
-
 .modal {
     position: absolute;
     left: 50%;
@@ -653,13 +648,14 @@ textarea {
 .features {
     display: none;
 }
+.section.features {
+    padding-bottom: 120px;
+}
 
 /* features */
 
 /* team */
-/* .team > .container {
-    max-width: 294px;
-} */
+
 
 .team-title {
     font-weight: 500;
@@ -784,7 +780,11 @@ textarea {
     padding-right: 16px;
 }
 
-
+.portfolio .container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .portfolio-overlay .text {
     color: var(--secondary-bg-color);
@@ -1115,7 +1115,7 @@ opacity: 1;
     width: 12px;
     height: 12px;
 
-    /* transform: translateY(50%);     */
+    transform: translateY(50%);    
     transition: fill 250ms var(--timing-function);
     
 }
@@ -1129,6 +1129,7 @@ opacity: 1;
 }
 
 .checkbox-label {
+    display: flex;
     font-weight: 400;
     font-size: 12px;
     line-height: calc(16/12);
